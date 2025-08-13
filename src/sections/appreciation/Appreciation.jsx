@@ -9,19 +9,19 @@ const Appreciation = () => {
   const vals = [
     {
       name: "Laureano Furno",
-      imgIcon: 'images/Client_img/Template.svg',
+      imgIcon: 'images/Client_img/Template.abcd1234.svg',
       opinion: "Lorem nima nostrum saependerit aperiam eum soluta, debitis, earum dolorem aliquid corporis corrupti voluptatem vero?",
       starNumber: 5
     },
     {
       name: "Laureano Furno",
-      imgIcon: 'images/Client_img/Template.svg',
+      imgIcon: 'images/Client_img/Template.abcd1234.svg',
       opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum saepe minus facere cupiditate id iste eveniet deserunt reprehenderit aperiam eum soluta, debitis, earum dolorem aliquid corporis corrupti voluptatem vero?",
       starNumber: 4.5
     },
     {
       name: "Laureano Furno",
-      imgIcon: 'images/Client_img/Template.svg',
+      imgIcon: 'images/Client_img/Template.abcd1234.svg',
       opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nostrum saepe minus facere cupiditate id iste eveniet deserunt reprehenderit aperiam eum soluta, debitis, earum dolorem aliquid corporis corrupti voluptatem vero?",
       starNumber: 5
     },

@@ -7,17 +7,17 @@ import 'aos/dist/aos.css';
 const About = () => {
   const vals = [
     {
-      iconAb: 'images/Icons_about/Client.svg',
+      iconAb: 'images/Icons_about/Client.abcd1234.svg',
       title: "Clientes",
       number: 200,
     },
     {
-      iconAb: 'images/Icons_about/Work.svg',
+      iconAb: 'images/Icons_about/Work.abcd1234.svg',
       title: "Casos realizados",
       number: 200,
     },
     {
-      iconAb: 'images/Icons_about/Ab.svg',
+      iconAb: 'images/Icons_about/Ab.abcd1234.svg',
       title: "Abogados",
       number: 20,
     },

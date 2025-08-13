@@ -6,7 +6,7 @@
 }
 .bannerSection {
   height: 960px;
-  background-image: url("/images/banner.webp");
+  background-image: url("/images/banner.abcd1234.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -5,7 +5,7 @@ import Box_Service from "../../components/box_Service/Box_Service.jsx";
 const Services = () => {
   const fam = {
     title: "DERECHO DE FAMILIA",
-    imgIcon: "images/Juridico/Fam.svg",
+    imgIcon: "images/Juridico/Fam.abcd1234.svg",
     services: [
       "Cuota alimentaria",
       "Divorcio",
@@ -24,7 +24,7 @@ const Services = () => {
 
   const laboral = {
     title: "DERECHOS LABORALES",
-    imgIcon: "images/Juridico/Laboral.svg",
+    imgIcon: "images/Juridico/Laboral.abcd1234.svg",
     services: [
       "Despidos",
       "Accidentes de trabajo",
@@ -43,7 +43,7 @@ const Services = () => {
 
   const commercial = {
     title: "DERECHO CIVIL Y COMERCIAL",
-    imgIcon: "images/Juridico/Civil-comer.svg",
+    imgIcon: "images/Juridico/Civil-comer.abcd1234.svg",
     services: [
       "Contratos civiles y comerciales",
       "Cobro de deudas",
@@ -63,7 +63,7 @@ const Services = () => {
 
   const provisional = {
     title: "DERECHO PREVISIONAL",
-    imgIcon: "images/Juridico/Prov.svg",
+    imgIcon: "images/Juridico/Prov.abcd1234.svg",
     services: [
       "Jubilaciones",
       "Pensiones por fallecimiento",
@@ -85,7 +85,7 @@ const Services = () => {
   
   const impositivos = {
     title: "IMPOSITIVOS Y FISCALES",
-    imgIcon: "images/Contable/tax.svg",
+    imgIcon: "images/Contable/tax.abcd1234.svg",
     services: [
       "Liquidación de Impuestos mensuales y anuales",
       "Monotributistas",
@@ -97,7 +97,7 @@ const Services = () => {
 
   const laborales = {
     title: "LABORALES",
-    imgIcon: "images/Contable/labor.svg",
+    imgIcon: "images/Contable/labor.abcd1234.svg",
     services: [
       "Altas y bajas de empleados",
       "Liquidación de sueldos y jornales",
@@ -109,7 +109,7 @@ const Services = () => {
 
   const asistencia = {
     title: "ASISTENCIA Y SOPORTE ANTE ORGANISMOS",
-    imgIcon: "images/Contable/attendance.svg",
+    imgIcon: "images/Contable/attendance.abcd1234.svg",
     services: [
       "Atención ante AFIP",
       "Atención ante ARBA",
@@ -121,7 +121,7 @@ const Services = () => {
 
   const gestion = {
     title: "GESTIÓN Y TRÁMITES",
-    imgIcon: "images/Contable/management.svg",
+    imgIcon: "images/Contable/management.abcd1234.svg",
     services: [
       "Inscripciones y bajas impositivas",
       "Habilitaciones comerciales",
@@ -136,7 +136,7 @@ const Services = () => {
   const sucesiones_y_procesal_array = [
   {
     title: "SUCESSIONES Y PATRIMONIAL",
-    imgIcon: "images/Procesal/succession.svg",
+    imgIcon: "images/Procesal/succession.abcd1234.svg",
     services: [
       "Sucesiones y herencias",
       "Testamentos y validaciones",
@@ -147,7 +147,7 @@ const Services = () => {
   },
   {
     title: "CONTRATOS",
-    imgIcon: "images/Procesal/management.svg",
+    imgIcon: "images/Procesal/management.abcd1234.svg",
     services: [
       "Redacción de contratos civiles y comerciales",
       "Contratos de compraventa y locación",
@@ -158,7 +158,7 @@ const Services = () => {
   },
   {
     title: "QUIEBRAS, AMPAROS Y PROCESAL",
-    imgIcon: "images/Procesal/insolvency.svg",
+    imgIcon: "images/Procesal/insolvency.abcd1234.svg",
     services: [
       "Procesos de quiebra y concurso",
       "Asistencia en amparos judiciales",
