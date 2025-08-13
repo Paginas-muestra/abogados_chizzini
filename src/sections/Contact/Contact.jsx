@@ -87,7 +87,7 @@ const Contact = () => {
                   <input type="email" name="email" onChange={handleChange} placeholder="EMAIL" required/>
                   <input type="text" name="asunto" onChange={handleChange} placeholder="ASUNTO" required />
                   <input type="text" className="mensaje" name="mensaje" onChange={handleChange} placeholder="MENSAJE" required/>
-                  <input type="submit"   disabled={disabledForm}  value="ENVIAR" />
+                  <input type="submit" style={{cursor: "Pointer"}}  disabled={disabledForm}  value="ENVIAR" />
                   <ReCAPTCHA
                     className="captcha-sd"
                     sitekey="6Lf-GaUrAAAAAM1WnCVGZ6n2AxtiewFNLdyooJNA"
