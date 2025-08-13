@@ -15,13 +15,12 @@ const Banner = () => {
                 <div className="tablet-v-bann">
                   <h1 className="nm-ban">Estudio Juridico Chizzini</h1>
                   <h1><span className="blue-color">Tus Abogados</span> De Confianza</h1>
-                  <p>En Estudio Jurídico Contable M&L brindamos asesoramiento legal y contable integral a personas y empresas. Nos enfocamos en ofrecer soluciones claras, trato humano y un acompañamiento personalizado en cada etapa. Estamos ubicados en Avellaneda, a minutos de CABA.</p>
+                  <p>En Estudio Jurídico Chizzini ofrecemos asesoramiento legal integral en todas las ramas del derecho, tanto para personas como para empresas. Nos enfocamos en brindar soluciones claras, un trato cercano y un acompañamiento personalizado en cada etapa del proceso. Estamos ubicados en Avellaneda, a pocos minutos de CABA.</p>
                   <div className="Contact-sectionBann">
                     <button onClick={() => location.href="#Contact-section"}>CONTACTAR</button>
                     <div className="Icons-ban">
-                      <i className="fa-brands fa-instagram blue-background"></i>
-                      <i className="fa-brands fa-linkedin blue-background"></i>
-                      <i className="fa-regular fa-envelope blue-background"></i>
+                      <i onClick={() => location.href="https://www.instagram.com/chizzini.abogados?igsh=MWZpc2llZzlkamhodQ%3D%3D"} className="fa-brands fa-instagram blue-background"></i>
+                      <i onClick={() => location.href=""} className="fa-regular fa-envelope blue-background"></i>
                       <i onClick={() => location.href="https://api.whatsapp.com/send?phone=541125491150"} className="fa-brands fa-whatsapp blue-background"></i>
                     </div>
                   </div>
@@ -40,13 +39,12 @@ const Banner = () => {
                 </model-viewer>
               </div>
               <div className="ab-bann">
-                <h1 className="nm-ban">Estudio Juridico Contable ML</h1>
+                <h1 className="nm-ban">Estudio Juridico Chizzini</h1>
                 <h1><span className="blue-color">Tus Abogados</span> De Confianza</h1>
-                <p>En Estudio Jurídico Contable M&L brindamos asesoramiento legal y contable integral a personas y empresas. Nos enfocamos en ofrecer soluciones claras, trato humano y un acompañamiento personalizado en cada etapa. Estamos ubicados en Avellaneda, a minutos de CABA.</p>
+                <p>En Estudio Jurídico Chizzini ofrecemos asesoramiento legal integral en todas las ramas del derecho, tanto para personas como para empresas. Nos enfocamos en brindar soluciones claras, un trato cercano y un acompañamiento personalizado en cada etapa del proceso. Estamos ubicados en Avellaneda, a pocos minutos de CABA.</p>
                 <div className="Contact-sectionBann">
                   <button onClick={() => location.href="#Contact-section"}>CONTACTAR</button>
                   <i className="fa-brands fa-instagram blue-background"></i>
-                  <i className="fa-brands fa-linkedin blue-background"></i>
                   <i className="fa-regular fa-envelope blue-background"></i>
                   <i onClick={() => location.href="https://api.whatsapp.com/send?phone=541125491150"} className="fa-brands fa-whatsapp blue-background"></i>
                 </div>

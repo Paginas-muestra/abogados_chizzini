@@ -8,7 +8,7 @@ const Box_Service = ({ service }) => {
     <div className="box-card-Service">
       <img className="color-icon" src={service?.imgIcon} alt={service?.title} />
       <h2>{service?.title}</h2>
-      <ul style={{ display: isOpen ? "block" : "none" }}>
+      <ul className={`services-list ${isOpen ? "open" : ""}`}>
         {service.services.map((item, i) => (
           <li key={i}>{item}</li>
         ))}

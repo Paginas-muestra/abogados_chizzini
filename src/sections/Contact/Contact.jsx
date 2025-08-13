@@ -1,20 +1,93 @@
-import React from "react";
+import React, {useState} from "react";
 import './Contact.css'
 import '@google/model-viewer';
+import axios from 'axios'
+import ReCAPTCHA from "react-google-recaptcha";
+import { Button, notification } from 'antd';
+import { WarningFilled,  CheckCircleOutlined } from '@ant-design/icons';
 
 const Contact = () => {
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    asunto: "",
+    mensaje: "",
+  });
+  const [disabledForm, setDisabledForm] = useState(false)
+  const [api, contextHolder] = notification.useNotification();
+
+  
+  const onChangeCaptcha = (token) => {
+    setCaptchaToken(token);
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!captchaToken) {
+      api.open({
+        message: 'Error',
+        description:
+          'Por favor, marque el captcha para poder enviar el correo',
+        icon: <WarningFilled style={{ color: 'red' }} />,
+        showProgress: true,
+      });
+      return;
+    }
+  setDisabledForm(true);
+    try {
+      const res = await axios.post("https://envio-correos-api.onrender.com/sendEmail", {
+        emailClient: "laureanofurno@gmail.com",
+        inputForm1: formData.nombre,
+        inputForm2: formData.email,
+        inputForm4: formData.asunto,
+        inputForm5: formData.mensaje,
+      });
+      api.open({
+        message: 'Datos enviados correctamente',
+        description:
+          '¡Gracias por llenar el formulario! En breves nos pondremos en contacto',
+        icon: <CheckCircleOutlined style={{ color: '#05ff3bff' }} />,
+        showProgress: true
+      });
+      setDisabledForm(false);
+    } catch (error) {
+      api.open({
+        message: 'Ocurrio un error',
+        description:
+          'Se presento un error al enviar el mensaje, por favor reintente o rellene los campos correctamente',
+        icon: <WarningFilled style={{ color: 'red' }} />,
+        showProgress: true
+      });
+      setDisabledForm(false)
+    }
+  };
+
   return (
     <>
+    {contextHolder}
         <section id="Contact-section" className="Contact-section">
             <footer>
               <div className="izq-footer">
-                <form action="">
+                <form onSubmit={handleSubmit}>
                   <h2>CONTACTAR</h2>
-                  <input type="text" placeholder="NOMBRE" required/>
-                  <input type="email" placeholder="EMAIL" required/>
-                  <input type="text" placeholder="ASUNTO" required />
-                  <input type="text" placeholder="MENSAJE" required/>
-                  <input type="submit" value="ENVIAR" />
+                  <input type="text" name="nombre" onChange={handleChange} placeholder="NOMBRE" required/>
+                  <input type="email" name="email" onChange={handleChange} placeholder="EMAIL" required/>
+                  <input type="text" name="asunto" onChange={handleChange} placeholder="ASUNTO" required />
+                  <input type="text" className="mensaje" name="mensaje" onChange={handleChange} placeholder="MENSAJE" required/>
+                  <input type="submit"   disabled={disabledForm}  value="ENVIAR" />
+                  <ReCAPTCHA
+                    sitekey="6Lf-GaUrAAAAAM1WnCVGZ6n2AxtiewFNLdyooJNA"
+                    onChange={onChangeCaptcha}
+                  />
                 </form>
                 <ul className="Footer-ul footer-ul-sections">
                   <li><h3>SECCIONES</h3></li>
@@ -39,6 +112,8 @@ const Contact = () => {
                   <li><p>EMAIL: info@.com</p></li>
                   <li><p>WHATSAPP: +54 11 2549-1150</p></li>
                   <li><p>DIR: Paraná 580, piso 3°, Buenos Aires, Argentina 1017</p></li>
+                  <li><p>Estudio juridico Chizzini ©® 2025 Copyright All Rights Reserved</p></li>
+                  <li><p>Material gráfico de: www.freepik.es</p></li>
                 </ul>        
               </div>     
             </footer>
@@ -65,6 +140,8 @@ const Contact = () => {
                   <li><p>EMAIL: info@.com</p></li>
                   <li><p>WHATSAPP: +54 11 2549-1150</p></li>
                   <li><p>DIR: Paraná 580, piso 3°, Buenos Aires, Argentina 1017</p></li>
+                  <li><p>Estudio juridico Chizzini ©® 2025 Copyright All Rights Reserved</p></li>
+                  <li><p>Material gráfico de: www.freepik.es</p></li>
                 </ul> 
               </div>
             </div>
