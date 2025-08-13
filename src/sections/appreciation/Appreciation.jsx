@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Appreciation.css'
 import '@google/model-viewer';
 import Box_val from "../../components/Box_val/Box_val.jsx";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Appreciation = () => {
+  
   const vals = [
     {
       name: "Laureano Furno",
@@ -23,12 +26,14 @@ const Appreciation = () => {
       starNumber: 5
     },
   ]
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
         <section id="Apprec-section" className="Apprec-section">
             <h2>Nuestras Valoraciones</h2>
-            <div className="cent-Apprec">
+            <div className="cent-Apprec" data-aos="fade-up" data-aos-duration="1000">
               {vals.map((Item, i) => (
                 <Box_val key={i} Val={Item}/>
               ))}

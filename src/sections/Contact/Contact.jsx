@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './Contact.css'
 import '@google/model-viewer';
 import axios from 'axios'
 import ReCAPTCHA from "react-google-recaptcha";
 import { Button, notification } from 'antd';
 import { WarningFilled,  CheckCircleOutlined } from '@ant-design/icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
   const [captchaToken, setCaptchaToken] = useState("");
@@ -70,14 +72,16 @@ const Contact = () => {
       setDisabledForm(false)
     }
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
     {contextHolder}
         <section id="Contact-section" className="Contact-section">
             <footer>
               <div className="izq-footer">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} data-aos="fade-right" data-aos-duration="1000">
                   <h2>CONTACTAR</h2>
                   <input type="text" name="nombre" onChange={handleChange} placeholder="NOMBRE" required/>
                   <input type="email" name="email" onChange={handleChange} placeholder="EMAIL" required/>
@@ -85,6 +89,7 @@ const Contact = () => {
                   <input type="text" className="mensaje" name="mensaje" onChange={handleChange} placeholder="MENSAJE" required/>
                   <input type="submit"   disabled={disabledForm}  value="ENVIAR" />
                   <ReCAPTCHA
+                    className="captcha-sd"
                     sitekey="6Lf-GaUrAAAAAM1WnCVGZ6n2AxtiewFNLdyooJNA"
                     onChange={onChangeCaptcha}
                   />

@@ -31,7 +31,6 @@ const Banner = () => {
                     ar
                     camera-controls
                     camera-orbit="15deg 75deg 3.9m"
-                    poster="poster.webp"
                     auto-rotate={false}
                     shadow-intensity="1"
                     style={{ width: '100%', height: '100%', paddingTop: 120}}

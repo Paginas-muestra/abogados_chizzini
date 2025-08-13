@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import './About.css'
 import '@google/model-viewer';
 import Metric_about from "../../components/Metric-about/Metric_about.jsx";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
   const vals = [
     {
@@ -20,11 +22,14 @@ const About = () => {
       number: 20,
     },
   ]
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
         <section id="About-section" className="About-section">
             <div className="Cent-about">
-                <div className="izq-ab">
+                <div className="izq-ab" data-aos="fade-right">
                     <h2>Sobre <span className="blue-color">Nosotros</span></h2>
                     <p>En Estudio Jurídico Chizzini nos especializamos en brindar asesoramiento legal integral en todas las ramas del derecho, ofreciendo soluciones claras y efectivas tanto a personas como a empresas de cualquier tamaño. Nuestro compromiso se centra en la atención personalizada, la transparencia y el acompañamiento cercano en cada etapa del proceso.</p>
                     <p>Contamos con un equipo de abogados con amplia experiencia, preparados para abordar cada caso desde una perspectiva estratégica, eficiente y orientada a resultados. Ya sea en derecho civil, penal, laboral, comercial, de familia, administrativo o cualquier otra especialidad, trabajamos con la dedicación y el profesionalismo que cada situación merece.</p>
@@ -34,7 +39,7 @@ const About = () => {
                     <Metric_about Box_values={vals[2]} />
                   </div>
                 </div>
-                <div className="der-ab">
+                <div className="der-ab" data-aos="fade-left">
                   <div className="parent">
                     <div className="div1"></div>
                     <div className="div2"></div>

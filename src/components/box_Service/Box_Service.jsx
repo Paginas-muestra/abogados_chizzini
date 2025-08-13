@@ -3,7 +3,6 @@ import './Box_Service.css';
 
 const Box_Service = ({ service }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(service?.imgIcon)
   return (
     <div className="box-card-Service">
       <img className="color-icon" src={service?.imgIcon} alt={service?.title} />
