@@ -2,7 +2,9 @@
 body {
   margin: 0px;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 .blue-color {
   color: #01233d;
 }
