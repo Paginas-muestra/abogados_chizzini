@@ -28,7 +28,7 @@ const Banner = () => {
                 </div>
                 
                 <model-viewer
-                    src="/Justice_Monument_0811014441_texture.glb"
+                    src="Justice_Monument_0811014441_texture.glb"
                     ar
                     camera-controls
                     camera-orbit="15deg 75deg 3.9m"
