@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+body {
+  margin: 0px;
+}
+
+.blue-color {
+  color: #01233d;
+}
+.blue-color2 {
+  color: #02467b;
+}
+.blue-background {
+  background-color: #01233d;
+}
+section {
+  scroll-margin-top: 140px;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,137 @@
+.Contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 25px solid rgb(0, 80, 126);
+  width: 100%;
+  background-image: url("/images/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Contact-section footer {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.izq-footer {
+  width: 50%;
+  margin-left: 7.5%;
+  padding: 50px 0px 50px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-footer {
+  background-color: white;
+  height: 100%;
+  padding: 50px 7.5% 50px 7.5%;
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.izq-footer form {
+  background-color: white;
+  padding: 70px 20px 70px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  font-family: "Oswald";
+}
+.izq-footer form input {
+  height: 40px;
+}
+.izq-footer form input {
+  height: 40px;
+}
+.izq-footer form input[type="submit"] {
+  width: 150px;
+  color: white;
+  font-family: "Oswald";
+  background-color: #01233d;
+  border: none;
+}
+.izq-footer form h2 {
+  margin: 0;
+}
+.Footer-ul-map {
+  color: black;
+  font-family: "Oswald";
+  list-style: none;
+  padding: 0;
+}
+.Footer-ul-map * {
+  text-decoration: none;
+  color: black;
+}
+.Footer-ul {
+  font-family: "Oswald";
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+.Footer-ul-map li p {
+  margin: 0px;
+}
+.Footer-ul * {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .Contact-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contact-section footer {
+    flex-direction: column;
+  }
+  footer {
+    width: 85% !important;
+  }
+  .izq-footer {
+    margin: 0;
+    width: 100%;
+  }
+  .izq-footer form {
+    width: auto;
+  }
+  .footer-ul-sections {
+    display: none;
+  }
+  .footer-d{display: none;}
+
+  .Responsive-footer-map{
+    display: flex !important;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+  }
+  .Responsive-footer-map iframe{
+    width: 85%;
+  }
+
+  .footer-ul-resp *{
+    color: black;
+  }
+  .footer-responsive-uls{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.Responsive-footer-map{
+  display: none;
+}
+@media(max-width:539px){
+  .footer-responsive-uls{
+    flex-direction: column;
+  }
+}

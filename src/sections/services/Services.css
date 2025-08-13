@@ -1,0 +1,65 @@
+.Services-section {
+  background-image: url("/images/service.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px 100px 0px;
+}
+
+.Services-section h2 {
+  color: white;
+  font-size: 34px;
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+.Services-section {
+  display: flex;
+  justify-content: center;
+}
+.cent-Services {
+  width: 85%;
+}
+
+.ul-SERVICES {
+  display: flex;
+  background-color: white;
+  padding: 0;
+  max-width: 400px;
+  overflow-x: auto;
+}
+.ul-SERVICES::-webkit-scrollbar {
+  display: none !important; 
+}
+.ul-SERVICES li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0px 35px 0px 35px;
+}
+.ul-SERVICES li p {
+  font-family: "Roboto";
+}
+.select-service-color {
+  background-color: #02467b;
+}
+.select-service-color p {
+  color: white;
+}
+
+.color-icon {
+  filter: invert(50%) sepia(50%) saturate(350%) hue-rotate(180deg);
+}
+
+.services-Containers {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+  align-items: flex-start;
+}
+
+@media(max-width: 380px){
+  .services-Containers{
+    grid-template-columns:none !important;
+  }
+}

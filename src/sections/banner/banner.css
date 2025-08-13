@@ -1,0 +1,137 @@
+.panel-inclinado {
+  width: 45%;
+  height: 100%;
+  background: white;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.bannerSection {
+  height: 960px;
+  background-image: url("/images/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ar-prompt {
+  display: none !important;
+}
+.ab-bann {
+  width: 50%;
+}
+.conj-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nm-ban {
+  font-size: 28px !important;
+  margin: 0;
+}
+.conj-banner {
+  color: white;
+  font-family: "Oswald";
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.conj-banner h1 {
+  color: white;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 64px;
+  margin: 0px;
+}
+.conj-banner p {
+  width: 95%;
+  color: white;
+  margin-left: 5px;
+  font-family: "Roboto";
+}
+.Contact-sectionBann {
+  display: flex;
+  margin-left: 5px;
+  height: 43px;
+  gap: 15px;
+}
+.Contact-sectionBann button {
+  background-color: #01233d;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 25px 10px 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.fa-brands,
+.fa-regular {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1s all;
+}
+.fa-brands:hover,
+.fa-regular:hover,
+.Contact-sectionBann button:hover {
+  background-color: #02467b;
+  border: 1px solid white;
+}
+.panel-inclinado {
+  transition: clip-path 2s;
+}
+.tablet-v-bann {
+  display: none;
+}
+
+@media (max-width: 851px) {
+  .panel-inclinado {
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .tablet-v-bann {
+    margin-left: 7%;
+    display: block;
+    width: 80%;
+  }
+  .Icons-ban {
+    display: flex;
+    gap: 15px;
+  }
+  .ab-bann {
+    display: none;
+  }
+  .conj-banner h2,
+  .conj-banner h1,
+  .conj-banner p {
+    color: black;
+  }
+  .libertyS {
+    display: none;
+  }
+  .list-headerMenu {
+    display: none !important;
+  }
+}
+@media (max-width: 605px) {
+  .conj-banner h1 {
+    font-size: 48px;
+  }
+  .panel-inclinado {
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+  }
+  .Contact-sectionBann {
+    flex-direction: column;
+  }
+  .Contact-sectionBann button {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .conj-banner h1 {
+    font-size: 42px;
+  }
+}

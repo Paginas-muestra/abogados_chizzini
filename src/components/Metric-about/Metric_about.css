@@ -1,0 +1,16 @@
+.box_Metric_about{
+  display: flex;
+  background-color: #01233d;
+  color: white;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 0px 0px 20px;
+}
+.box_Metric_about h3{
+  margin: 10px 0px 10px 0px;
+  font-family: 'Oswald';
+}
+.box_Metric_about img{
+  width: 40px;
+  height: 40px;
+}
